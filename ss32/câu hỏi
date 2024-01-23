@@ -1,0 +1,13 @@
+// Thuộc tính prototype là gì?
+
+
+Trong ngôn ngữ JavaScript, mỗi đối tượng đều có một thuộc tính được gọi là "prototype." Thuộc tính prototype là một tham chiếu đến một đối tượng khác, gọi là "prototype object." Prototype object này chứa các thuộc tính và phương thức mà đối tượng hiện tại có thể sử dụng.
+
+Khi một thuộc tính hoặc phương thức không được tìm thấy trong đối tượng hiện tại, JavaScript sẽ tìm kiếm nó trong prototype object của đối tượng đó. Nếu nó không được tìm thấy ở cấp đó, JavaScript sẽ tiếp tục tìm kiếm trong prototype object của prototype, và cứ như vậy cho đến khi nó tìm thấy hoặc đạt đến đỉnh chuỗi prototype.
+
+Thuộc tính prototype giúp thực hiện tính kế thừa trong JavaScript. Khi một đối tượng được tạo từ một hàm tạo (constructor function), nó sẽ được liên kết với prototype object của hàm tạo đó thông qua thuộc tính prototype. Điều này cho phép các đối tượng được tạo từ cùng một hàm tạo chia sẻ cùng một prototype object, giúp giảm lặp lại và tiết kiệm bộ nhớ.
+
+// cơ chế prototype-based inheritance trong js là ntn?
+
+
+Trong JavaScript, cơ chế kế thừa dựa trên nguyên tắc "prototype-based inheritance." Điều này có nghĩa là mỗi đối tượng trong JavaScript đều có một prototype object, và các đối tượng có thể kế thừa thuộc tính và phương thức từ prototype object của chúng.
